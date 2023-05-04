@@ -45,3 +45,27 @@ My parts of the term projects assigned in the scope of university courses. Pleas
 
 </details>
 
+<details>
+  <summary>EE634 Digital Image Processing</summary>
+  
+  ## EE634 Digital Image Processing Project: Watershed Segmentation
+
+  <p float="left">
+    <img title="beach_onlyridgelines" src="https://user-images.githubusercontent.com/97564250/236262880-872e1d30-edfa-4d33-8c24-ddd50f7768cd.JPG" width="24%">
+    <img title="beach_segments" src="https://user-images.githubusercontent.com/97564250/236262923-66ce8ab2-9a7d-46fa-9263-1f56743daa4a.JPG" width="24%">
+    <img title="hats_onlyridgelines" src="https://user-images.githubusercontent.com/97564250/236262940-4360fa77-bb62-412c-8081-328d94079a85.JPG" width="24%">
+    <img title="hats_segments" src="https://user-images.githubusercontent.com/97564250/236262945-4332ba9f-359c-4df4-a237-5eecee72f329.JPG" width="24%">
+    <img title="candies_onlyridgelines" src="https://user-images.githubusercontent.com/97564250/236262931-6f02ba05-7725-4080-8519-551de8290e55.JPG" width="24%">
+    <img title="candies_segments" src="https://user-images.githubusercontent.com/97564250/236262935-2b60ba3c-327b-4d44-9ca7-04e2e49cc81d.JPG" width="24%">
+    <img title="peppers_onlyridgelines" src="https://user-images.githubusercontent.com/97564250/236262962-5c668097-3bd0-4f91-aeb9-86dea915766e.JPG" width="24%">
+    <img title="peppers_segments" src="https://user-images.githubusercontent.com/97564250/236262915-9e278be9-d6f5-416f-a5e3-cd77033c5d2c.JPG" width="24%">
+    <img title="peppers_onlyridgelines" src="https://user-images.githubusercontent.com/97564250/236262952-ce7bc4bd-c4e1-4f07-bfd9-065e069b1707.JPG" width="48%">
+    <img title="parrots_segments" src="https://user-images.githubusercontent.com/97564250/236262960-9a5625ac-c309-4ee4-9d5d-ac0cc5fcc377.JPG" width="48%">
+  </p>
+
+  _Figure: Watershed ridgelines on original images and segmentation results_
+  
+  This script is a part of a project to test and compare distinct segmetation algorithms on rich colored images. My objective was to implement watershed algorithm on the given images. I tackled with the oversegmentation problem which is typical to this method by filtering and merging similar blobs of segmentations.
+  
+  > Relevant content is [here](/metu_ee634_digital_image_processing_watershed_segmentation). The code is not compiled, should be run in MATLAB 2016a or later.
+</details>
