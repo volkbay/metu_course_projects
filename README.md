@@ -33,7 +33,7 @@ My parts of the term projects assigned in the scope of university courses. Pleas
 
   ![comparison](https://user-images.githubusercontent.com/97564250/236255629-347c0ab9-0931-4cb5-bd23-29679576abd1.jpg)
   
-  This is a implementation of ICCV 2015 [paper](/metu_ee584_machine_vision_stereo_snakes/doc/Ju_StereoSnakes_Contour_Based_ICCV_2015_paper.pdf) completely coded by us. The work consists of stereo aided segmentation and Matlab GUI. The method takes input of a single stereo image, that is foreground-segmented by an arbitrary algorithm. Then, energy functions (depending on the parameters) strives to fit best segmentation to the second stereo image. The advantage of this method is that it has potential to improve input segmentation and to segment occluded objects in the first image.
+  This is a implementation of ICCV 2015 [paper](/metu_ee584_machine_vision_stereo_snakes/doc/Ju_StereoSnakes_Contour_Based_ICCV_2015_paper.pdf) completely coded by us. The work consists of stereo-aided segmentation and Matlab GUI. The method takes input of a single stereo image, that is foreground-segmented by an arbitrary algorithm. Then, energy functions (depending on the parameters) strives to fit best segmentation to the second stereo image. The advantage of this method is that it has potential to improve input segmentation and to segment occluded objects in the first image.
   
   > Relevant content is [here](/metu_ee584_machine_vision_stereo_snakes). The code is not compiled, should be run in MATLAB 2016a or later.
 
@@ -68,4 +68,18 @@ My parts of the term projects assigned in the scope of university courses. Pleas
   This script is a part of a project to test and compare distinct segmetation algorithms on rich colored images. My objective was to implement watershed algorithm on the given images. I tackled with the oversegmentation problem which is typical to this method by filtering and merging similar blobs of segmentations.
   
   > Relevant content is [here](/metu_ee634_digital_image_processing_watershed_segmentation). The code is not compiled, should be run in MATLAB 2016a or later.
+</details>
+
+<details>
+  <summary>EE636 Digital Video Processing</summary>
+  
+  ## EE634 Digital Video Processing Project: Tracking in Crowds
+  
+  https://user-images.githubusercontent.com/97564250/236273516-d16a81c5-aa7c-4374-9ecf-3304126f0898.mp4
+  
+  This is a implementation of ECCV 2008 [paper](/metu_ee636_digital_video_processing_tracking_in_crowds/doc/TrackingInCrowds_ECC2008(MAIN%20PAPER).pdf) completely coded by me. The method, first, analyzes several frames of the video to understand the general movement flow of the crowd (offline). Then, the object in a user-selected window is tracked by combining offline analysis and online tracking by photometric features. Please see the [documents](/metu_ee636_digital_video_processing_tracking_in_crowds/doc) to familiarize with parameters and for the detailed explanation of the algorithm. 
+  
+  >**Note** Offline part is encapsulated in the `initialize.m` which analyzes video to get SFF and BFF information. Finally, run `real_time.m` to select an object to track by dragging the marker on the desired location and, then, by double-clicking it. Both scripts have several parameters adjusted to default values.
+  
+  > Relevant content is [here](/metu_ee636_digital_video_processing_tracking_in_crowds). The code is not compiled, should be run in MATLAB 2016a or later.
 </details>
