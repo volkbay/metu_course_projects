@@ -4,7 +4,7 @@ My parts of the term projects assigned in the scope of university courses. Pleas
 <details>
   <summary>EEE Undergraduate Capstone Project</summary>
   
-  ## Undergraduate Capstone Project: 3-ball Playing Robot
+  ## Electrical-Electronics Eng. Undergraduate Capstone Project: 3-ball Playing Robot
   https://user-images.githubusercontent.com/97564250/236216379-7402f908-63a5-4388-bbc0-949204c5af0e.mp4
   
   I was in a team of six people and my responsibility was to detect location and colors of the 3 balls by the images acquired by a top view camera. The objective is to hit the cue ball (red one in the examples here) to touch other two balls. The shooting angle calculation are also shown by two lines: one for cueing towards the second ball and one for hitting the third after reflection. The robot is mobile and freely moving, that communicates with Matlab host via bluetooth.
@@ -33,7 +33,7 @@ My parts of the term projects assigned in the scope of university courses. Pleas
 
   ![comparison](https://user-images.githubusercontent.com/97564250/236255629-347c0ab9-0931-4cb5-bd23-29679576abd1.jpg)
   
-  This is a implementation of ICCV 2015 [paper](/metu_ee584_machine_vision_stereo_snakes/doc/Ju_StereoSnakes_Contour_Based_ICCV_2015_paper.pdf) completely coded by us. The work consists of stereo-aided segmentation and Matlab GUI. The method takes input of a single stereo image, that is foreground-segmented by an arbitrary algorithm. Then, energy functions (depending on the parameters) strives to fit best segmentation to the second stereo image. The advantage of this method is that it has potential to improve input segmentation and to segment occluded objects in the first image.
+  This is an implementation of ICCV 2015 [paper](/metu_ee584_machine_vision_stereo_snakes/doc/Ju_StereoSnakes_Contour_Based_ICCV_2015_paper.pdf) completely coded by our group of two. The work consists of stereo-aided segmentation and Matlab GUI. The method takes input of a single stereo image, that is foreground-segmented by an arbitrary algorithm. Then, energy functions (depending on the parameters) strives to fit best segmentation to the second stereo image. The advantage of this method is that it has potential to improve input segmentation and to segment occluded objects in the first image.
   
   > Relevant content is [here](/metu_ee584_machine_vision_stereo_snakes). The code is not compiled, should be run in MATLAB 2016a or later.
 
@@ -73,13 +73,53 @@ My parts of the term projects assigned in the scope of university courses. Pleas
 <details>
   <summary>EE636 Digital Video Processing</summary>
   
-  ## EE634 Digital Video Processing Project: Tracking in Crowds
+  ## EE636 Digital Video Processing Project: Implementing Tracking in Crowds
   
   https://user-images.githubusercontent.com/97564250/236273516-d16a81c5-aa7c-4374-9ecf-3304126f0898.mp4
   
-  This is a implementation of ECCV 2008 [paper](/metu_ee636_digital_video_processing_tracking_in_crowds/doc/TrackingInCrowds_ECC2008(MAIN%20PAPER).pdf) completely coded by me. The method, first, analyzes several frames of the video to understand the general movement flow of the crowd (offline). Then, the object in a user-selected window is tracked by combining offline analysis and online tracking by photometric features. Please see the [documents](/metu_ee636_digital_video_processing_tracking_in_crowds/doc) to familiarize with parameters and for the detailed explanation of the algorithm. 
+  This is an implementation of ECCV 2008 [paper](/metu_ee636_digital_video_processing_tracking_in_crowds/doc/TrackingInCrowds_ECC2008(MAIN%20PAPER).pdf) completely coded by me. The method, first, analyzes several frames of the video to understand the general movement flow of the crowd (offline). Then, the object in a user-selected window is tracked by combining offline analysis and online tracking by photometric features. Please see the [documents](/metu_ee636_digital_video_processing_tracking_in_crowds/doc) to familiarize with parameters and for the detailed explanation of the algorithm. 
   
   >**Note** Offline part is encapsulated in the `initialize.m` which analyzes video to get SFF and BFF information. Finally, run `real_time.m` to select an object to track by dragging the marker on the desired location and, then, by double-clicking it. Both scripts have several parameters adjusted to default values.
   
   > Relevant content is [here](/metu_ee636_digital_video_processing_tracking_in_crowds). The code is not compiled, should be run in MATLAB 2016a or later.
+</details>
+
+<details>
+  <summary>CENG561 Artificial Intelligence</summary>
+  
+  ## CENG561 Artificial Intelligence Project: Map Spanning (Cleanbot)
+  
+  >**Warning** This project has its own repository, please visit [here](https://github.com/volkbay/cleanbot).
+
+</details>
+
+<details>
+  <summary>CENG786 Robot Motion Planning & Control</summary>
+  
+  ## CENG786 Robot Motion Planning & Control Project: Implementing a Multi-robot Path Planner
+  
+  <p>
+    <video src="https://user-images.githubusercontent.com/97564250/236289566-69da7d60-be8c-4243-a958-bbb30d3f0745.mp4" type="video/mp4" width="10%">
+    <p float="left">
+       <img title="path1" src="https://user-images.githubusercontent.com/97564250/236290029-95a57601-9748-408b-977c-5c1849816f13.png" width="32%">
+       <img title="path2" src="https://user-images.githubusercontent.com/97564250/236290033-1fd7ada6-967d-4929-81e8-c8a23bed62b2.png" width="32%">
+       <img title="path3" src="https://user-images.githubusercontent.com/97564250/236290037-8802620c-eb24-41b5-ab84-1fc20fedf425.png" width="32%">
+    </p>
+  </p>
+
+  This is an implementation of IJRR 2016 [paper](/metu_ceng786_robot_motion_planning/doc/Solovey(2016)_Discrete%20RRT%20for%20exploration%20of%20implicit%20roadmaps%20in%20multi%20robot%20motion%20planning.pdf) completely coded by me. Due to the fact that this is a term project, I partially realized the 2D map experiments of the work (there are also 3D experiments). Basically, this is a composed method exploring implicit paths in a multi-robot scene, each having a start and destination point. The main idea is discretizing the popular RRT algorithm to get most cost efficient motion planning.
+  
+The robots are holonomic and circular with 2DOF. Obstacles are convex or concave polyhedral 2D objects in a 10x10 meters map. The map obstacle geometries are embedded in the `init_arena` script. Main function `main_project_ceng786` may be called with two parameters namely _case_number_ and _number_of_vertices_. First one determines which the type of the arena, start-target locations and the number of robots, while the latter is for PRM calculation of each agent.
+
+> Relevant content is [here](/metu_ceng786_robot_motion_planning). The code is not compiled, should be run in MATLAB 2016a or later.
+
+</details>
+
+<details>
+  <summary>EEE Graduate Thesis Project</summary>
+  
+  ## Electrical-Electronics Eng. MSc Thesis Project: Automated Image Processing for Scratch Detection on Specular Surfaces
+  
+  >**Warning** This project has its own repository, please visit [here](https://github.com/volkbay/AIPSDSS).
+
 </details>
