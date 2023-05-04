@@ -1,4 +1,5 @@
-# metu_course_projects
+# <a href="https://www.metu.edu.tr/"><img align="right" src="https://user-images.githubusercontent.com/97564250/236304985-7013dd63-9f8f-4b7a-89aa-09cfe95219e0.png" width="30%"></a> My Projects from Courses at _Middle East Technical University_
+
 My parts of the term projects assigned in the scope of university courses. Please click to unfold the section of each project for details.
 
 <details>
