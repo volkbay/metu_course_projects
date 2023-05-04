@@ -41,7 +41,7 @@ My parts of the term projects assigned in the scope of university courses. Pleas
     <img src="https://user-images.githubusercontent.com/97564250/236255639-e9ce31c2-7c02-4014-b7b9-0134496848e0.JPG" width="75%">
   </p>
   
-  _Figure: StereoSnakes Matlab GUI (please follow steps in the [documents](/metu_ee584_machine_vision_stereo_snakes/doc) to familiarize with the parameters)_
+  _Figure: StereoSnakes Matlab GUI (please follow steps in the user manual section our [report](/metu_ee584_machine_vision_stereo_snakes/doc/EE584_final_report_bora_volkan.pdf) to familiarize with the parameters and interface)_
 
 </details>
 
