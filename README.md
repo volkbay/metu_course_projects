@@ -65,7 +65,7 @@ My parts of the term projects assigned in the scope of university courses. Pleas
 
   _Figure: Watershed ridgelines on original images and segmentation results_
   
-  This script is a part of a project to test and compare distinct segmetation algorithms on rich colored images. My objective was to implement watershed algorithm on the given images. I tackled with the oversegmentation problem which is typical to this method by filtering and merging similar blobs of segmentations.
+  This script is a part of a project to test and compare distinct segmetation algorithms on richly colored images. My objective was to implement watershed algorithm on the given images. I tackled with the oversegmentation problem which is typical to this method by filtering and merging similar blobs of segmentations.
   
   > Relevant content is [here](/metu_ee634_digital_image_processing_watershed_segmentation). The code is not compiled, should be run in MATLAB 2016a or later.
 </details>
@@ -107,6 +107,8 @@ My parts of the term projects assigned in the scope of university courses. Pleas
     </p>
   </p>
 
+  _Figure: Efficient paths of each robot between respective starting and target locations_
+  
   This is an implementation of IJRR 2016 [paper](/metu_ceng786_robot_motion_planning/doc/Solovey(2016)_Discrete%20RRT%20for%20exploration%20of%20implicit%20roadmaps%20in%20multi%20robot%20motion%20planning.pdf) completely coded by me. Due to the fact that this is a term project, I partially realized the 2D map experiments of the work (there are also 3D experiments). Basically, this is a composed method exploring implicit paths in a multi-robot scene, each having a start and destination point. The main idea is discretizing the popular RRT algorithm to get most cost efficient motion planning.
   
 The robots are holonomic and circular with 2DOF. Obstacles are convex or concave polyhedral 2D objects in a 10x10 meters map. The map obstacle geometries are embedded in the `init_arena` script. Main function `main_project_ceng786` may be called with two parameters namely _case_number_ and _number_of_vertices_. First one determines which the type of the arena, start-target locations and the number of robots, while the latter is for PRM calculation of each agent.
