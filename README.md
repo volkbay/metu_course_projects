@@ -99,22 +99,19 @@ My parts of the term projects assigned in the scope of university courses. Pleas
   
   ## CENG786 Robot Motion Planning & Control Project: Implementing a Multi-robot Path Planner
   
-  <p>
-    <video src="https://user-images.githubusercontent.com/97564250/236289566-69da7d60-be8c-4243-a958-bbb30d3f0745.mp4" type="video/mp4" width="10%">
-    <p float="left">
-       <img title="path1" src="https://user-images.githubusercontent.com/97564250/236290029-95a57601-9748-408b-977c-5c1849816f13.png" width="32%">
-       <img title="path2" src="https://user-images.githubusercontent.com/97564250/236290033-1fd7ada6-967d-4929-81e8-c8a23bed62b2.png" width="32%">
-       <img title="path3" src="https://user-images.githubusercontent.com/97564250/236290037-8802620c-eb24-41b5-ab84-1fc20fedf425.png" width="32%">
-    </p>
-  </p>
+  https://user-images.githubusercontent.com/97564250/236289566-69da7d60-be8c-4243-a958-bbb30d3f0745.mp4
+              
+  <img title="path1" src="https://user-images.githubusercontent.com/97564250/236290029-95a57601-9748-408b-977c-5c1849816f13.png" width="32%">
+  <img title="path2" src="https://user-images.githubusercontent.com/97564250/236290033-1fd7ada6-967d-4929-81e8-c8a23bed62b2.png" width="32%">
+  <img title="path3" src="https://user-images.githubusercontent.com/97564250/236290037-8802620c-eb24-41b5-ab84-1fc20fedf425.png" width="32%">
 
   _Figure: Efficient paths of each robot between respective starting and target locations_
   
   This is an implementation of IJRR 2016 [paper](/metu_ceng786_robot_motion_planning/doc/Solovey(2016)_Discrete%20RRT%20for%20exploration%20of%20implicit%20roadmaps%20in%20multi%20robot%20motion%20planning.pdf) completely coded by me. Due to the fact that this is a term project, I partially realized the 2D map experiments of the work (there are also 3D experiments). Basically, this is a composed method exploring implicit paths in a multi-robot scene, each having a start and destination point. The main idea is discretizing the popular RRT algorithm to get most cost efficient motion planning.
   
-The robots are holonomic and circular with 2DOF. Obstacles are convex or concave polyhedral 2D objects in a 10x10 meters map. The map obstacle geometries are embedded in the `init_arena` script. Main function `main_project_ceng786` may be called with two parameters namely _case_number_ and _number_of_vertices_. First one determines which the type of the arena, start-target locations and the number of robots, while the latter is for PRM calculation of each agent.
+  The robots are holonomic and circular with 2DOF. Obstacles are convex or concave polyhedral 2D objects in a 10x10 meters map. The map obstacle geometries are embedded in the `init_arena` script. Main function `main_project_ceng786` may be called with two parameters namely _case_number_ and _number_of_vertices_. First one determines which the type of the arena, start-target locations and the number of robots, while the latter is for PRM calculation of each agent.
 
-> Relevant content is [here](/metu_ceng786_robot_motion_planning). The code is not compiled, should be run in MATLAB 2016a or later.
+  > Relevant content is [here](/metu_ceng786_robot_motion_planning). The code is not compiled, should be run in MATLAB 2016a or later.
 
 </details>
 
